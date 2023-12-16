@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mp--primaryColor: #95c7fa;
+    font-size: 16px;
+}
+
+nav {
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 0 100px 0 0;
+}
+
+nav a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+a {
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.logo {
+    padding: 0 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mp--primaryColor);
+}
