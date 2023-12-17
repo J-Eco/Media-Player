@@ -1,0 +1,5 @@
+in this folder, put your folders, containing .mp4 files here. 
+
+If you have .mkv files, unfortunately, that wont work and youll have to convert them into .mp4 instead. 
+
+https://cloudconvert.com/mkv-to-mp4 <-- use this to do that.
