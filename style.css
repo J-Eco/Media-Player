@@ -3,32 +3,10 @@
     padding: 0;
 }
 
-:root {
-    --mp--primaryColor: #95c7fa;
+:root, input {
+    --mp--primaryColor: #222124;
     font-size: 16px;
-}
-
-nav {
-    display: inline-block;
-    font-size: 1.4em;
-    margin: 0 100px 0 0;
-}
-
-nav a {
-    color: black;
-}
-
-a:hover {
-    color: white;
-}
-
-a {
-    padding-right: 30px;
-    text-decoration: none;
-}
-
-.logo {
-    padding: 0 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .flex {
@@ -38,9 +16,57 @@ a {
     align-items: center;
 }
 
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* -------------------------------------- Header Styles --------------------------------------*/
+nav {
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 0 100px 0 0;
+}
+
+nav a {
+    color: aliceblue;
+}
+
+a:hover {
+    color: rgb(207, 202, 245);
+}
+
+a {
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+#but {
+    border: none;
+    background-color: transparent;
+    font-size: .99em;   
+    color: aliceblue;
+}
+
+#but:hover {
+    color: rgb(207, 202, 245);
+    cursor: pointer;
+}
+
+img {
+    padding: 0 50px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--mp--primaryColor);
 }
+
+
+
+
+/* -------------------------------------- Main Styles --------------------------------------*/

@@ -6,6 +6,11 @@
     <title>MediaPlayer</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome@0/+esm"></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script type="module" src="/javascript/loader.js"></script>
+    <script src="/javascript/media.js"></script>
 </head>
 <body>
     <header (role="banner") class="FlexNav" >
@@ -16,18 +21,27 @@
         </a>
         <nav class="navOpt">
             <a href="#">Home</a>
-            <a>Grid View</a>
             <a>Search</a>
+            <a id="fileLabel">
+                <input type="file" id="myFile" style="display: none;">
+                <input type="button" id="but" onclick="document.getElementById('myFile').click();" value="Add Media"/>
+            </a>
         </nav>
-    </header>
+    </header>  
+   
+    <div id="loader" class="center">
+        <object>
+            <img src="/imgs/svg/Triangles-1s-205px.svg" width="200px" height="200px">
+        </object> 
+    </div>
 
     <main class="content">
         <section>
             <h2>
                 Recently Added
             </h2>
-            <div class="newMedia" id="newConetent">
-
+            <div class="newMedia line" id="newContent">
+                
             </div>
         </section>
     </main>
@@ -41,5 +55,6 @@
             <h3>Trademark, none.</h3>
         </section>
     </footer>
+    
 </body>
 </html>
