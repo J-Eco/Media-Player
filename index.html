@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script type="module" src="/javascript/loader.js"></script>
-    <script src="/javascript/media.js"></script>
+    <script type="module" src="/javascript/loader.js"></script>    <script src="/javascript/media.js" defer></script>
 </head>
 <body>
     <header (role="banner") class="FlexNav" >
@@ -23,12 +22,14 @@
             <a href="#">Home</a>
             <a>Search</a>
             <a id="fileLabel">
-                <input type="file" id="myFile" style="display: none;">
-                <input type="button" id="but" onclick="document.getElementById('myFile').click();" value="Add Media"/>
+                <input type="file" id="myFile" style="display: none;" multiple accept="video/mp4">
+                <input type="button" id="but" onclick="exMed();" value="Add Media"/>
             </a>
         </nav>
     </header>  
-   
+
+<!-- Page loader element -->
+
     <div id="loader" class="center">
         <object>
             <img src="/imgs/svg/Triangles-1s-205px.svg" width="200px" height="200px">
@@ -37,13 +38,20 @@
 
     <main class="content">
         <section>
-            <h2>
-                Recently Added
-            </h2>
-            <div class="newMedia line" id="newContent">
-                
-            </div>
+            <media-controller id="videoPlayer">
+
+
+                <!-- <media-control-bar>
+                    <media-play-button></media-play-button>
+                    <media-mute-button></media-mute-button>
+                    <media-volume-range></media-volume-range>
+                    <media-time-range></media-time-range>
+                    <media-pip-button></media-pip-button>
+                    <media-fullscreen-button></media-fullscreen-button>
+                </media-control-bar> -->
+            </media-controller>
         </section>
+
     </main>
 
     <footer class="flex">
@@ -55,6 +63,6 @@
             <h3>Trademark, none.</h3>
         </section>
     </footer>
-    
+
 </body>
 </html>
