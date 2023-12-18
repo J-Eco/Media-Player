@@ -9,9 +9,3 @@ document.onreadystatechange = function() {
         document.querySelector("body").style.visibility = "visible";
     }
 };
-
-fetch("/imgs/svg/Triangles-1s-205px.svg")
-    .then(response => response.text())
-    .then(svgContent => {
-        document.querySelector("#loader").innerHTML = svgContent;
-    })
