@@ -24,15 +24,24 @@ function handleFiles(files) {
 
 
 
-        // test control
+        // code here reacts once a mp4/video file is added. This section adds media player controls.
 
         const mediaCon = document.createElement("media-control-bar");
         mediaCon.file = file;
         previewDiv.appendChild(mediaCon);
 
         const mediaPlay = document.createElement("media-play-button");
-        mediaCon.file = file;
+        mediaPlay.file = file;
         previewDiv.appendChild(mediaPlay);
+
+        const mediaMute = document.createElement("media-mute-button");
+        mediaMute.file = file;
+        previewDiv.appendChild(mediaMute);
+
+        const mediaVolControl = document.createElement("media-volume-range");
+        mediaVolControl.file = file;
+        previewDiv.appendChild(mediaVolControl);
+        
 
         // end
 
