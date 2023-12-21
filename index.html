@@ -9,9 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script type="module" src="/javascript/loader.js"></script>    <script src="/javascript/media.js" defer></script>
+    <script type="module" src="/javascript/loader.js"></script>    
+    <script src="/javascript/media.js" defer></script>
 </head>
+
+<div id="loader" class="center">
+    <object>
+        <img src="/imgs/svg/Triangles-1s-205px.svg" width="200px" height="200px">
+    </object> 
+</div>
+
 <body>
+
+
     <header (role="banner") class="FlexNav" >
         <a class="logo" href="#">
             <object>
@@ -30,25 +40,13 @@
 
 <!-- Page loader element -->
 
-    <div id="loader" class="center">
-        <object>
-            <img src="/imgs/svg/Triangles-1s-205px.svg" width="200px" height="200px">
-        </object> 
-    </div>
+    
 
-    <main class="content">
+    <main class="content flex">
         <section>
             <media-controller id="videoPlayer">
 
 
-            <!--<media-control-bar>
-                    <media-play-button></media-play-button>
-                    <media-mute-button></media-mute-button>
-                    <media-volume-range></media-volume-range>
-                    <media-time-range></media-time-range>
-                    <media-pip-button></media-pip-button>
-                    <media-fullscreen-button></media-fullscreen-button>
-                </media-control-bar> -->
             </media-controller>
         </section>
 
@@ -56,11 +54,8 @@
 
     <footer class="flex">
         <section>
-            <h3>For Free Use</h3>
-            <p>If you have a home server, this Media Player should be able to work on any hardware you got.</p>
-        </section>
-        <section>
-            <h3>Trademark, none.</h3>
+            <h3>Media Player. Use any mp4 file on hand</h3>
+            <p>If you have a home server, this Media Player should be able to work on it</p>
         </section>
     </footer>
 
