@@ -70,3 +70,17 @@ header {
 
 
 /* -------------------------------------- Main Styles --------------------------------------*/
+
+.content {
+    height: 864px;
+    background-color: #2e2c30;
+}
+
+/* -------------------------------------- footer Styles --------------------------------------*/
+
+footer {
+    background-color: var(--mp--primaryColor);
+    color: aliceblue;
+    padding: 50px;
+    text-align: center;
+}
